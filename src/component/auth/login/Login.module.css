@@ -1,0 +1,190 @@
+ 
+form {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+      }
+  
+      .wraplogin {
+        width: 500px;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 65px 55px 54px 55px ;
+      }
+  
+      .limiter {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .loginform {
+        width: 100%;
+      }
+  
+      .loginformtitle {
+        display: block;
+        font-family: 'Montserrat';
+        font-weight: bolder;
+        font-size: 39px;
+        color: #333333;
+        line-height: 1.2;
+        text-align: center;
+        padding-bottom: 49px;
+      }
+  
+      .wrapinput {
+        width: 100%;
+        position: relative;
+        border-bottom: 2px solid #d9d9d900;
+        margin-bottom: 23px;
+      }
+      .labelinput {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        color: #333333;
+        line-height: 1.5;
+        padding-left: 7px;
+      } 
+      .container {
+        width: 100%;  
+        /* background-image: url('../../asset/images/background.jpg'); */
+        min-height: 100vh;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      
+      .inputBox:focus + .focusinput::before {
+        width: 100%;
+      }
+    
+      .formDiv{
+        padding-top: 8%;
+      }
+  
+      .loginbtn {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      label,
+      .inputBox {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        color: #333333;
+        line-height: 1.2;
+      
+        display: block;
+        width: 100%;
+        height: 55px;
+        background: transparent;
+        outline: none;
+        border: none;
+      }
+      
+      label {
+        margin-bottom: 12px;
+        height: 22px;
+        font-size: 22px;
+        font-family: 'Montserrat';
+      }
+      
+      .inputBox {
+        margin-bottom: 30px;
+        padding: 10px;
+        border-radius: 3px;
+        background: #4699b30d;
+      }
+      
+      .inputBox.error {
+        background-color: #ff00000f;
+      }
+      
+      .inputFeedback {
+        color: red;
+        margin-top: -20px;
+        font-size: 14px;
+        /* margin-bottom: 30px; */
+      }
+  
+      button {
+        padding: 10px 48px;
+        font-size: 25px;
+        width: 100%;
+        font-family: 'Montserrat';
+        border-radius: 55px;
+        background-color: rgb(70, 153, 179);
+        color: white;
+        border: 1px solid rgb(70, 153, 179);
+        background-color: 250ms;
+      }
+      
+      button:hover {
+        cursor: pointer;
+        background-color: white;
+        color: rgb(70, 153, 179);
+      }
+  
+      .socialMedia{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
+  
+      .registerSocial{
+        padding-top: 20%;
+        text-align: center;
+        padding-bottom: 5%;
+      }
+      
+      .signUp {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 1.5;
+        color: #333333;
+        text-transform: uppercase;
+      }
+  
+      .loginsocial {
+        font-size: 25px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 5px;
+      }
+      
+      .loginsocial:hover {
+        color: #fff;
+        background-color: #333333;
+      }
+  
+      .bg1 {background-color: #3b5998}
+      .bg2 {background-color: #1da1f2}
+      .bg3 {background-color: #ea4335}
+  
+      @media (max-width: 576px) {
+        .wraplogin {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      } 
+      
