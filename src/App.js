@@ -5,6 +5,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import AppRouting from './AppRouting';
+import { hot } from 'react-hot-loader/root';
 
 const theme = createMuiTheme({
   palette: {
@@ -30,4 +31,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default hot(App);
