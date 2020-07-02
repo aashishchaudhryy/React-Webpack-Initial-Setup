@@ -13,7 +13,9 @@ module.exports = merge(common, {
         publicPath: '/'
     },
     devServer: {
-        historyApiFallback: true
+        historyApiFallback: true,
+        hot:true,
+        open:true
     },
     plugins: [
         new HtmlWebpackPlugin({
