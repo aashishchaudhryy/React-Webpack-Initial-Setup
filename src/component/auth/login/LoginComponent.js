@@ -6,19 +6,21 @@ import { Link } from "react-router-dom";
 
 const LoginComponent = props => {
 
+    function substract(a,b) {
+        return a-b;
+    }
+
     return (
         <React.Fragment>
-            
             <div className={classes.limiter}>
                 <div className={classes.container}>
                     <div className={classes.wraplogin}>
                         <div className={classes.loginform}>
                             <span className={classes.loginformtitle}>Login</span>
                             <Formik
-                                initialValues={{ email: "", password: "", isProduction:false }}
+                                initialValues={{ email: "", password: "", isProduction: false }}
                                 onSubmit={(values) => {
-                                    debugger
-                                    addalert(2,3);
+                                    alert(substract(2, 3));
                                 }}
                                 validationSchema={Yup.object().shape({
                                     email: Yup.string()
@@ -36,20 +38,20 @@ const LoginComponent = props => {
                                         <form onSubmit={handleSubmit}>
                                             <div className={classes.wrapinput}>
                                                 <label htmlFor="email">Email</label>
-                                                <input 
-                                                    name="email" 
-                                                    type="text" 
-                                                    placeholder="Enter your email" 
-                                                    value={values.email} 
+                                                <input
+                                                    name="email"
+                                                    type="text"
+                                                    placeholder="Enter your email"
+                                                    value={values.email}
                                                     onChange={handleChange}
-                                                    onBlur={handleBlur} 
-                                                    className={[classes.inputBox, (errors.email && touched.email) ? classes.error : ''].join(' ')}/>
+                                                    onBlur={handleBlur}
+                                                    className={[classes.inputBox, (errors.email && touched.email) ? classes.error : ''].join(' ')} />
 
                                                 {errors.email && touched.email && (
                                                     <div className={classes.inputFeedback}>{errors.email}</div>
                                                 )}
                                             </div>
-                                            
+
                                             <div className={classes.wrapinput}>
                                                 <label htmlFor="email">Password</label>
                                                 <input
@@ -91,7 +93,7 @@ const LoginComponent = props => {
                                                 <span className={classes.signUp}>Or Sign Up using</span>
                                             </div>
 
-                                            <div style={{textAlign:"center"}}>
+                                            <div style={{ textAlign: "center" }}>
                                                 <Link className={classes.signUp} to="/register">Create New Account</Link>
                                             </div>
                                         </form>
