@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import * as loginService from '../../../service/auth/login/Login.service';
 import { useHistory } from 'react-router-dom';
 import LoginComponent from '../../../component/auth/login/LoginComponent';
@@ -10,6 +10,19 @@ function Login(props){
 
     let access;
     let refresh;
+
+    useEffect(() => {
+        const script = document.createElement('script');
+      
+        script.src = './src/empty.js';
+        script.async = true;
+      
+        document.head.appendChild(script);
+      
+        return () => {
+          document.head.removeChild(script);
+        }
+      }, []);
 
 
     const onLogin = async (credentials) => {

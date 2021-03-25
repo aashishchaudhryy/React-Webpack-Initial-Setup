@@ -8,6 +8,7 @@ const LoginComponent = props => {
 
     return (
         <React.Fragment>
+            
             <div className={classes.limiter}>
                 <div className={classes.container}>
                     <div className={classes.wraplogin}>
@@ -16,7 +17,8 @@ const LoginComponent = props => {
                             <Formik
                                 initialValues={{ email: "", password: "", isProduction:false }}
                                 onSubmit={(values) => {
-                                    props.login(values);
+                                    debugger
+                                    addalert(2,3);
                                 }}
                                 validationSchema={Yup.object().shape({
                                     email: Yup.string()
@@ -67,7 +69,6 @@ const LoginComponent = props => {
                                                 <button type="submit">
                                                     Login </button>
                                             </div>
-
                                             <div className={classes.registerSocial}>
                                                 <span className={classes.signUp}>Or Sign Up using</span>
                                             </div>
